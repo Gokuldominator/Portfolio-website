@@ -40,6 +40,19 @@
             margin: auto;
             overflow: hidden;
         }
+        .moving-text {
+            font-size: 64px;
+            color: hsl(335, 70%, 53%);
+            animation: moveText 10s liner infinite;
+        }
+        @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
         section {
             margin: 20px 0;
         }
@@ -66,6 +79,7 @@
 <body>
     
     <header>
+        
         <h1>My Portfolio</h1>
         <nav>
             <a href="file:///C:/Users/Paavai-16/Portfolio-website/src/about.html">About Me</a>
@@ -75,11 +89,11 @@
         </nav>
     </header>
    
-        <h1>
-            <div class="container1">
+        <h2>
+            <div class="moving-text">
                 GD Technologies
-            </div>
-        </h1>
+                 </div>
+        </h2>
     
     <div class="container">
         <section id="about">
