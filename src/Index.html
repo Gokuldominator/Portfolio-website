@@ -36,25 +36,47 @@
             #a04591;
         }
         .container {
-            width: 80%;
-            margin: auto;
+            width: 50%;
+            margin: left;
             overflow: hidden;
         }
-        .moving-text {
-            font-size: 64px;
-            color: hsl(335, 70%, 53%);
-            animation: moveText 10s liner infinite;
+        .cont2 {
+            width: 100%;
+            margin: center;
+            overflow: hidden;
+                    }
+        .move-text {
+            color: rgb(207, 30, 30);
+            display: -moz-box; /* Ensure text is treated as a block element */
+            font-size: 30px; /* Adjust font size as needed */
+            animation: move 15s infinite linear; /* Apply the animation */
         }
-        @keyframes moveText {
+
+        @keyframes move {
             0% {
-                transform: translateX(100%);
+                transform: translateX(-100%); /* Start position (off-screen to the left) */
             }
             100% {
-                transform: translateX(-100%);
+                transform: translateX(100%); /* End position (off-screen to the right) */
             }
         }
-        section {
-            margin: 20px 0;
+        .section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin: auto 0;
+        }
+        .section1 {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin: 20px 50;
+        }
+        .section2 {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin: 20px 50;
         }
         .container1 {
             width: 80%;
@@ -80,37 +102,34 @@
     
     <header>
         
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="file:///C:/Users/Paavai-16/Portfolio-website/src/about.html">About Me</a>
-            <a href="file:///C:/Retest/Portfolio-website/src/Skills.html">Skills</a>
-            <a href="file:///C:/Retest/Portfolio-website/src/projects.html">Projects</a>
-            <a href="file:///C:/Retest/Portfolio-website/src/Contact.html">Contact</a>
-        </nav>
+        <h1>SR Sports Academy</h1>
+        
     </header>
    
         <h2>
-            <div class="moving-text">
-                GD Technologies
-                 </div>
+            <div class="move-text">
+                GD Technologies Project
+            </div>
         </h2>
-    
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm A.Gokul, a passionate web developer with experience in creating dynamic and responsive websites. I enjoy problem-solving and constantly learning new technologies.</p>
-        </section>
-              
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me via email at <a href="mailto:gokuldominator@gmail.com">gokuldominator@gmail.com</a> or through my social media profiles:</p>
-            <ul>
-                <img src="Logo.png" height="350">  
+        <div class="container">
+        <section class="section">
                 
-                <!-- Add more social media links as needed -->
-            </ul>
+          <img src="cri.jpeg" height="250"> 
+                 <a href="file:///D:/Projects/srsports/src/projects.html"> Cricket</a>
         </section>
-    </div>
+        </div>
+        <div class="container">
+            <section class="section1">
+                <img src="foot.jpeg" height="250">
+                <a href="file:///D:/Projects/srsports/src/projects.html"> Football</a>   
+            </section>
+            </div>
+        <div class="container">
+            <section class="section2">
+               <img src="hock.jpeg" height="350">
+            <a href="file:///D:/Projects/srsports/src/projects.html"> Hockey</a> 
+        </section>
+        </div>
     <footer>
         <p>&copy; 2024 Gokul.A All rights reserved.</p>
     </footer>
